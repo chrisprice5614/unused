@@ -1,0 +1,13 @@
+body {
+    color: rgb(211, 211, 211);
+    background: rgb(49, 49, 49);
+}
+
+.intro {
+    color: rgb(56, 56, 56);
+    background: rgb(255, 255, 255);
+    margin: 2% 12%;
+    padding: 1%;
+    box-shadow: 16px 16px rgb(0, 0, 0);
+    
+}
