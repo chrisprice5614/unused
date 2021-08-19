@@ -58,7 +58,7 @@ body, html{
     font-size:16px;
 }
 
-.pimg1, .pimg2, .pimg3 {
+.pimg1, .pimg2, .pimg3, .pimgmarching, .pimgmarching2, .parallaxBig, .parallaxSmall{
     position:relative;
     opacity:0.70;
     background-position:center;
@@ -118,4 +118,128 @@ body, html{
     transform: translate(0px,-50%);
     height: 100%;
     position: relative;
+}
+
+.fadeIn {
+    animation: transitionIn 0.75s;
+}
+
+.fadeInY {
+    animation: transitionInY 0.75s;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes transitionInY {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.img-use{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.img-desc{
+    transition: opacity 0.4s ,transform 0.4s;
+}
+
+
+
+.image-description {
+    position: absolute;
+    top: 130px;
+    width: 100%;
+    color: #FFF;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.4s;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    
+}
+
+.img-desc:hover > .image-description{
+    opacity:1;
+}
+
+.img-desc:hover {
+    opacity: 0.8;
+    transform: translateY(5px);
+}
+
+.pimgmarching{
+    background-image:url('../assets/band/marching/bg.jpg');
+    min-height: 800px;
+}
+
+.pimgmarching2{
+    background-image:url('../assets/band/marching/bg.jpg');
+    min-height: 400px;
+}
+
+
+.parallaxBig{
+    min-height: 800px;
+    
+}
+
+.parallaxSmall{
+    min-height: 400px;
+}
+
+.noBullet {
+    list-style-type:  none;
+}
+
+.audioPdf{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.cropped{
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    align-content: center;
+    text-align: center;
+}
+
+
+.section-footer{
+    background-color:#111;
+    color:#BBB;
+    text-align: center;
+}
+
+#aplayer{
+    width: 100%;
+    height: 10%;
+}
+
+.fleft{
+    width: 33%;
 }
