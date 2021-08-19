@@ -222,7 +222,7 @@ body, html{
 
 .cropped{
     width: 100%;
-    height: 600px;
+    height: 60%;
     overflow: hidden;
     align-content: center;
     text-align: center;
