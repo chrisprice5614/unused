@@ -243,3 +243,51 @@ body, html{
 .fleft{
     width: 33%;
 }
+
+.textL {
+    text-align: left;
+}
+
+.storeMarching2012{
+    cursor: pointer;
+}
+
+.product-header {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto;
+}
+
+.product-title {
+    width: 45%;
+    text-align: left;
+}
+
+.product {
+    text-align: left;
+    display: flex;
+}
+
+.product-price {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.products ion-icon {
+    font-size: 21px;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.product-container {
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+}
