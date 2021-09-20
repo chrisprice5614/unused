@@ -9,7 +9,7 @@ p {
 
 .intro {
     
-    color: rgb(56, 56, 56);
+    color: rgb(0, 0, 0);
     margin: 0%;
     background: rgb(255, 255, 255);
     justify-content: center;
@@ -28,7 +28,7 @@ p {
 
 
 .box {
-    color: rgb(56, 56, 56);
+    color: rgb(0, 0, 0);
     background: rgb(255, 255, 255);
     margin: 2% 2%;
     padding: 1%;
