@@ -1,5 +1,5 @@
 body {
-    color: rgb(211, 211, 211);
+    color: rgb(255, 255, 255);
     background: rgb(49, 49, 49);
 }
 
@@ -89,13 +89,13 @@ body, html{
 }
 
 .section-light{
-    background-color:#BBB;
-    color:#111;
+    background-color:#FFF;
+    color:#000;
 }
 
 .section-dark{
-    background-color:#111;
-    color:#BBB;
+    background-color:#000;
+    color:#FFF;
 }
 
 .ptext{
