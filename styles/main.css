@@ -111,8 +111,8 @@ body, html{
 }
 
 .ptext .pborder{
-    background-color:#111;
-    color:#f4f4f4;
+    background-color:#000;
+    color:#FFF;
     padding:4%;
 }
 
@@ -233,8 +233,8 @@ body, html{
 
 
 .section-footer{
-    background-color:#111;
-    color:#BBB;
+    background-color:#000;
+    color:#FFF;
     text-align: center;
 }
 
