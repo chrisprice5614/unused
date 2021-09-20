@@ -210,6 +210,7 @@ function deleteItem(deleteMe,which)
     document.querySelector('.myCart span').textContent = productNumbers;
 
     displayCart();
+    location.reload();
 
 }
 
