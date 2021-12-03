@@ -3,6 +3,8 @@
     margin-right: 20%;
     margin-top: 12px;
 }
+
+
 .containerdivNewLine { clear: both; float: none; display: block; position: relative; } 
 
 .centere {
@@ -27,4 +29,21 @@
     width: 20%;
     margin: 0%;
     padding: 0%;
+  }
+  @media only screen and (max-width: 900px)
+  {
+      .main {
+          margin-left: 1%;
+          margin-right: 1%;
+          margin-top: 12px;
+      }
+      .column {
+        clear: both; float: none; display: block; position: relative;
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+        color: #666;
+        line-height: 2;
+        text-align: center;
+      }
   }
