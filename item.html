@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="/styles/main.css">
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	</head>
+	<nav>
+		<script id="replace_with_navbar" src="nav.js"></script>
+	</nav>
+	<body>
+        
+		<div class="main">
+            <div class="replac">
+            </div>
+            <div style="color: #666; text-align: center; margin-top: 32px; font-size: 24pt;">
+                Contact <a href="mailto:chrisprice5614@gmail.com">chrisprice5614@gmail.com</a> for info on how to obtain this piece.
+            </div>
+        </div>
+			<script src="/data.js"></script>
+            <script>
+                var id = window.location.search.slice(4);
+                var item = items.find(t => t.id == id);
+                var repla = document.querySelector("div.replac");
+                var arranger = item.arranger;
+                var date = item.date.toLocaleString();
+                date = date.split(', ')[0];
+                var price = item.price;
+                var html = `
+                <img src=${item.img} style= "display: block; padding-top:16px; margin-left: auto;margin-right: auto; " width=25%>
+                <div style="text-align: center; margin-top: 32px;">
+                <span style="font-size: 48pt; color: #666;">${item.title}</span>
+                <hr style="margin-bottom: 64px">
+                <div class="column">
+                    <iframe width="100%" height="400px" src=${item.link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="column" style="text-align: left; margin-left:2%;">
+                    <i><b>${item.title}</b> (${date})</i>
+                    <br>
+                    <i><b>By: </b>${item.composer}</i>
+                    <br>
+                    <i><b>Ensemble: </b>${item.genre}</i>
+                    <br>
+                    <i><b>Difficulty: </b>${item.difficulty}</i>
+                    ${!item.arranger ? "" : "<br><i><b>Arranger: </b>"+arranger+"</i>"}
+                    ${!item.price ? "" : "<br><i><b>Price: </b>"+price+"</i>"}
+                    <br>
+                    <i><b>Information: </b>${item.description}</i>
+                </div>
+                <div class="containerdivNewLine"></div>
+                </div>
+                `
+                repla.insertAdjacentHTML('beforeend', html)
+            </script>
+            
+		
+	</body>
+
+	<footer>
+		<script id="replace_with_footer" src="foot.js"></script>
+	</footer>
+</html>

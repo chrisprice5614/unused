@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="/styles/main.css">
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	</head>
+	<nav>
+		<script id="replace_with_navbar" src="nav.js"></script>
+	</nav>
+	<body>
+		<div class="main">
+            <ul style="list-style-type:none;">
+            </ul>
+		</div>
+        <script src="data.js"></script>
+        <script>
+            var search = window.location.search.slice(8).toUpperCase();
+            var container = document.querySelector('ul');
+            var htmlsearch = `
+                <div style="margin-left:12px;">
+                    Search results for: "${search}"
+                </div>
+                <br>
+            `
+            container.insertAdjacentHTML('beforeend', htmlsearch);
+            for (let item of items) {
+            var arranger = item.arranger;
+            var html = `
+            <li>
+                <a href="/item.html?id=${item.id}" style="color:#666; text-decoration: none; ">
+                <div style="float: left;width: 20%;margin: 0%;padding: 0%;">
+                    <img src=${item.img} width="100%" style="float: left;">
+                </div>
+                <div style="float: left;width: 70%;margin: 0%;margin-left:2%;padding: 0%;">
+                    <div style="">
+                        <div style="font-size:24pt; color:black; text-decoration: underline; ">
+                            ${item.title}
+                        </div>
+                        <div style="line-height: 1.5; padding-left: 5px;">
+                            <i><b>By: </b>${item.composer}</i>
+                            ${!item.arranger ? "" : "<br><i><b>Arranger: </b>"+arranger+"</i>"}
+                            <br>
+                            <i><b>Ensemble: </b>${item.genre}</i>
+                            <br>
+                            <i><b>Difficulty: </b>${item.difficulty}</i>
+                            <br>
+                            <i><b>Information: </b>${item.description}</i>
+                            <div class="containerdivNewLine"></div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="containerdivNewLine"></div>
+                <hr style="margin-bottom: 12px; margin-top: 24px;">
+                <div class="containerdivNewLine"></div>
+                </a>
+            </li>
+            `
+            if(item.title.toUpperCase().search(search.replace("+"," ")) != -1 || item.composer.toUpperCase().search(search.replace("+"," ")) != -1 || item.arranger.toUpperCase().search(search.replace("+"," ")) != -1 || item.genre.toUpperCase().search(search.replace("+"," ")) != -1)
+            {
+                container.insertAdjacentHTML('beforeend', html);
+            }
+        }
+        </script>
+	</body>
+
+	<footer>
+		<script id="replace_with_footer" src="foot.js"></script>
+	</footer>
+</html>
