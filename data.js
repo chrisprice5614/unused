@@ -320,7 +320,7 @@ var items = [
         description: "I thought about you by Jimmy Van Heusen arranged for trombone quartet and combo.",
         difficulty: "5",
         price: "",
-        img: "/assets/img/jazz/quizzacious.png",
+        img: "/assets/img/jazz/ThoughtAboutYou.png",
         link: "https://www.youtube.com/embed/bcuUgYD0AmQ"
     }
 ]
