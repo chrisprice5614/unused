@@ -19,9 +19,6 @@
 		<div class="main">
             <div class="replac">
             </div>
-            <div style="color: #666; text-align: center; margin-top: 32px; font-size: 24pt;">
-                Contact <a href="mailto:chrisprice5614@gmail.com">chrisprice5614@gmail.com</a> for info on how to obtain this piece.
-            </div>
         </div>
 			<script src="/data.js"></script>
             <script>
@@ -55,8 +52,38 @@
                 </div>
                 <div class="containerdivNewLine"></div>
                 </div>
+                
+                <div class="container">
+                <h1 style="text-align: center;">Contact for Obtaining or Questions</h1>
+                
+                <div>
+                    <form target="_blank" action="https://formsubmit.co/chrisprice5614@gmail.com" method="POST">
+                        <div class="form-group">
+                            <input type="hidden" name="_captcha" value="false">
+                            <div class="form-row">
+                                <input type="hidden" name="_subject" value="${item.title} for  ${item.price}">
+                                <div class="col">
+                                    <input type="email" name="email" class="form-control" placeholder="Your Email Address" required style="width:100%;padding: 12px 20px;margin: 8px 0;box-sizing: border-box; border: 2px solid black; border-radius: 4px">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required style="width:100%;padding: 12px 20px;margin: 8px 0;box-sizing: border-box; border: 2px solid black; border-radius: 4px"></textarea>
+                        </div>
+                    <div replaceMeLater>
+                        <button style="text-align: center; font-size: 24px; padding: 16px 32px; border-radius: 4px;" type="submit">Send</button>
+                    </div>
+                    </form>
+                </div>
                 `
-                repla.insertAdjacentHTML('beforeend', html)
+                repla.insertAdjacentHTML('beforeend', html);
+                function replaceThis(){
+                    var replacer = document.querySelector("div.replaceMeLater");
+                    var newHtml = `
+                    <h1>Message has been sent!</h1>
+                    `
+                    replacer.insertAdjacentHTML('beforeend', newHtml);
+                }
             </script>
             
 		
