@@ -309,5 +309,18 @@ var items = [
         price: "$19.99",
         img: "/assets/img/jazz/quizzacious.png",
         link: "https://www.youtube.com/embed/EF_v1WGJXWU"
+    },
+    {
+        id: 26,
+        title: "I Thought About You",
+        composer: "Jimmy Van Heusen",
+        arranger: "Jason Schilling",
+        date: new Date(2021, 12, 11),
+        genre: "Jazz Combo",
+        description: "I thought about you by Jimmy Van Heusen arranged for trombone quartet and combo.",
+        difficulty: "5",
+        price: "",
+        img: "/assets/img/jazz/quizzacious.png",
+        link: "https://www.youtube.com/embed/bcuUgYD0AmQ"
     }
 ]
